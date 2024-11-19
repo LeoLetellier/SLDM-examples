@@ -1,0 +1,36 @@
+[project]
+name = "Demo Project"
+note = "This project is for test purposes. It can be used to test the behaviour of the SLDM software. All data are fictional and are by no means associated to real data."
+dem_file_name = "dem.csv"
+dem_azimuth = 4.363323211669922
+
+[[surface]]
+name = "Large surface"
+file_name = "surface_1.csv"
+
+[[surface]]
+name = "Small surface"
+file_name = "surface_2.csv"
+
+[[model]]
+name = "Composite model"
+file_name = "model_1.csv"
+weights = [1.0, 2.0]
+boundaries = [[1, 5], [1, 3]]
+gradients = [[[1, 1.0], [5, 0.5]], []]
+
+[[model]]
+name = "Calibrated model"
+file_name = "model_2.csv"
+weights = [2.131518840789795, -0.11591784656047821]
+boundaries = [[1, 5], [1, 3]]
+gradients = [[[1, 1.0], [5, 0.5]], []]
+
+[[disp_data]]
+name = "Satellite geometry"
+azimuth = 3.665191650390625
+incidence = 0.6108652949333191
+
+[[disp_data.datas]]
+name = "Satellite data"
+file_name = "disp_1_data_1.csv"
